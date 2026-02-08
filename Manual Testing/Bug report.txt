@@ -1,0 +1,34 @@
+Bug riport:
+
+Name: Missing additional fee for small orders
+Environment: prod
+Team: N/A
+Browser: Chrome 144.0
+Affect version: N/A (2.11.7?)
+Severity: High
+
+Steps to reproduce:
+	- Predefinition 
+		A logged in user
+		
+	- Step 1
+		user adds <10 dollar price product to shopping list
+		
+	- Step 2
+		user clicks on "Continue to Checkout"
+		
+	- Step 3
+		user clicks on ""Continue to Checkout" again
+		
+	- Actual result
+		an extra fee is not applied for the order
+		
+	- Expected
+		an extra fee should be applied for the order
+		
+Attachements: (included in the directory)
+
+Risks:
+	#1 Forecasted financial revenue loss for the business
+	#2 inconsistent communication for customers -> deception of customers -> possible reputation decrease
+	

@@ -1,0 +1,35 @@
+Aldi 
+
+Task #1
+Manual testing
+
+Three test cases:
+
+Positive test case:
+
+#1 "Replacements for products" checkbox
+Given a logged in user
+And the shopping list is empty
+When user adds multiple products to the shopping list
+And checks shopping list
+And uncheck the "Allow replacements for all products" checkbox
+Then all product related "Replace if out of stock" checkbox are unchecked
+
+Negative / Boundary test case:
+
+#1 Product quantity set to 0
+Given a logged in user
+And the shopping list is empty
+When user adds a product to the shopping list
+And checks shopping list
+And set the product quantity to 0
+Then product is removed from shopping list
+
+#2 Product quantity set to 99+
+Given a logged in user
+And the shopping list is empty
+When user adds a product to the shopping list
+And checks shopping list
+And set the product quantity to 99+
+Then an information toaster pops up with message of "Max order quantity of 99 is reached"
+And 99 product added to shopping list after clicking out of the field
