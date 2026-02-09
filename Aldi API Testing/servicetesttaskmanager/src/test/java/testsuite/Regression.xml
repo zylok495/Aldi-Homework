@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test Suite" parallel="true" thread-count="2">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Test manager Tests">
+        <groups>
+            <run>
+                <include name="Regression"/>
+                <exclude name="Quarantine"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.PostTasksTests"/>
+            <class name="tests.PutTasksByIdTests"/>
+            <class name="tests.DeleteTasksByIdTests"/>
+            <class name="tests.GetTasksByIdTests"/>
+        </classes>
+    </test>
+</suite>
