@@ -1,0 +1,30 @@
+CI Integration bonus task
+
+CI Integration
+
+Continuous Integration is essential to ensure that automated tests are executed frequently and provide fast feedback to developers. 
+
+CI Tool
+
+I am familiar with Jenkins, which is widely used for creating CI/CD pipelines.
+
+In real projects test environments can be unstable or test users may be flaky.
+To mitigate this:
+
+- separate smoke vs regression tests
+
+- use test tagging
+
+- schedule nightly full runs
+
+- send notifications for failures
+
+- allow QA to analyse failures before blocking releases
+
+How would I set CI pipline stages?
+
+1. Pull latest code from repository
+2. Build the application
+3. Smoke test run -> to discover environmental issues
+4. Full regression test run
+5. Publish results -> for the team to email or Teams group
