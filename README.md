@@ -1,2 +1,4 @@
-Please be adviced that documentations can be found in the project's README.md file.
+# Aldi Homework
+
+Please be adviced that documentations can be found in the tasks's README.md file.  
 Thank you :)
